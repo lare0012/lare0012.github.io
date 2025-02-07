@@ -1,0 +1,59 @@
+body{
+    background-color: #EEEBE0;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: #C63C31;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+h1, h2{
+    text-decoration: underline;
+}
+.btn{
+    background-color: #C63C31;
+    color: #EEEBE0;
+    font-size: medium;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2px rgb(0, 0, 0);
+}
+.btn:hover{
+    background-color: #EEEBE0;
+    color: #C63C31;
+}
+#introPara{
+font-style: italic;
+}
+
+article h2{
+    color: #cc7a0f;
+}
+.hobbylist{
+    color: #cc7a0f;
+}
+/* adding child number, adding odd or even, 2n+1 */
+ ul li:nth-child(2n+1){
+    color: black;
+}
+.secondClass{
+    border: 4px solid #ffffff;
+}
+form{
+    background-color: #bd996f;
+    max-width: 700px;
+    /* margin vs padding */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+input, textarea{
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
