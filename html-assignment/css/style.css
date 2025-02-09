@@ -1,67 +1,67 @@
-body{
-    background-color: #f1e9cf;
-    font-family: "biorhyme-variable", sans-serif;
-    font-size: 18px;
-font-weight: 750px;
-font-style: normal;
+body {
+  background-color: #f1e9cf;
+  font-family: "biorhyme-variable", sans-serif;
+  font-size: 18px;
 }
-header, footer{
-    font-family: "linotype-didot", serif;
-font-weight: 1000;
-font-style: normal;
-background-color: #e7c69e;
-border-radius: 10px;
-padding: 25px 25px 25px 25px;
-margin: 25px;
-text-align: center;
-box-shadow: 0px 0px 3px 2px #000000;
+header,
+footer {
+  font-family: "linotype-didot", serif;
+  font-weight: 1000;
+  font-style: normal;
+  background-color: #e7c69e;
+  border-radius: 10px;
+  padding: 25px 25px 25px 25px;
+  margin: 25px;
+  text-align: center;
+  box-shadow: 0px 0px 3px 2px #000000;
 }
-.name{
-    font-size: 45px;
-    padding: 25px 25px 5px 25px;
-    margin: 5px;
-    color: #5f3705;
+.name {
+  font-size: 45px;
+  padding: 25px 25px 5px 25px;
+  margin: 5px;
+  color: #5f3705;
 }
-#image{
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 0px 0px 2px 1px black;
+#my-image {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 2px 1px black;
 }
-ul{
-    list-style-type: square;
+ul {
+  list-style-type: square;
 }
-ul :nth-child(odd){
-    color: #906939;
+ul :nth-child(odd) {
+  color: #5f3705;
+  background-color: #e7c69e;
+  max-width: 300px;
 }
 
-a{
-    font-family: "bc-novatica-cyr", sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: #b78c58;
-    margin: 100px;
-    padding: 10px;
-    background-color: #EEEBE0;
-    border: 2px solid #000000;
-    border-radius: 5px;
+a {
+  font-family: "bc-novatica-cyr", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #b78c58;
+  margin: 100px;
+  padding: 10px;
+  background-color: #eeebe0;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  text-align: center;
 }
-a:hover{
-color: #000000;
+a:hover {
+  color: #eeebe0;
+  background-color: #b78c58;
 }
-a{
-    text-align: center;
+h1 {
+  font-family: "linotype-didot", serif;
+  font-size: 25px;
 }
-#navigate {
-    text-align: center;
+h2 {
+  font-family: "biorhyme-variable", sans-serif;
+  font-variation-settings: "wdth" 100, "wght" 800;
 }
-h1{
-    font-family: "linotype-didot", serif;
-   font-size: 25px;
+dl {
+  font-family: "biorhyme-variable", sans-serif;
 }
-h2{
-font-family: "biorhyme-variable", sans-serif;
-font-variation-settings: "wdth" 100, "wght" 800;
-}
-dl{
-    font-family: "biorhyme-variable", sans-serif;
+main {
+  margin-left: 27px;
 }
