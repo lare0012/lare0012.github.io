@@ -32,7 +32,7 @@ footer {
 ul {
   list-style-type: square;
 }
-ul :nth-child(odd) {
+ul li:nth-child(odd) {
   color: #5f3705;
   background-color: #e7c69e;
   max-width: 300px;
