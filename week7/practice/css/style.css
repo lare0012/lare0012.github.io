@@ -1,0 +1,18 @@
+body{
+background-color: blanchedalmond;
+color: black;
+line-height: 1.5rem;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+    color: bisque;
+    padding: 10rem 0;
+    background-image: url("../images/bread.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
