@@ -1,94 +1,129 @@
 body {
-    font-family: "itc-avant-garde-gothic-pro", sans-serif;
-    background-color: #aad4cf;
-    max-width: 100%;
+  font-family: "stevie-sans", sans-serif;
+  background-color: #aad4cf;
+  max-width: 100%;
 }
 .banner {
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
 }
-.title{
-    font-size:102px;
-    padding: 0px 0px 90px 0px;
-    font-weight: 700;
-}
-#starfish-width{
-    width: 1920px;
-    height: 1080px;
-    object-fit: cover;
+.title {
+  font-size: 102px;
+  padding: 0px 0px 90px 0px;
+  font-weight: 700;
 }
 h1 {
-    position: absolute;
-    top: 32%;
-    left: 32%;
-    color: white;
-    font-size: 48px;
-    font-weight: normal;
+  position: absolute;
+  top: 37%;
+  left: 29%;
+  color: white;
+  font-size: 48px;
+  font-weight: normal;
 }
-
+nav{
+  margin-top: 15px;
+}
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 20px 0;
 }
 nav ul a {
-    color: black;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 500;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
 }
-.starfish-image{
-    float: left;
-    margin: 0px 20px 0px 0px;
+nav ul li {
+  justify-content: space-between;
+  padding: 0 200px;
+  border-right: 2px solid black;
 }
-.content{
-    font-size: 1.5rem;
-    line-height: 32px;
+
+nav ul li:last-child {
+  border-right: none;
 }
-section{
-    margin-top: 50px;
-    margin-bottom: 0px;
+
+.starfish-image {
+  float: left;
+  margin: 0px 20px 0px 0px;
+  padding-left: 10px;
 }
-form{
-    border: 2px solid black;
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
+.content {
+  font-size: 1.5rem;
+  line-height: 32px;
+  padding-left: 10px;
+}
+section {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+form {
+  border: 2px solid black;
+  max-width: 100%;
+  margin: 20px 25px 5px 15px;
+  padding: 20px;
 }
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group textarea{
-    display: block;
-    margin: 5px auto;
-    font-size: 16px;
-    width: 100%;
+.form-group textarea {
+  display: block;
+  margin: 5px auto;
+  font-size: 16px;
+  width: 100%;
 }
-.radio{
-    margin: 20px 0;
+.radio {
+  margin: 20px 0;
 }
-.radio label{
-    margin-right: 15px;
+.radio label {
+  margin-right: 15px;
 }
-button{
-    padding: 20px 20px;
-    background-color: transparent;
-    border: 2px solid black;
-    cursor: pointer;
-font-size: 16px;
+button {
+  padding: 20px 20px;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 16px;
 }
-#name, #email{
-    height: 30px;
+#name,
+#email {
+  height: 30px;
 }
 footer {
-    text-align: right;
-    padding: 20px 40px;
+  text-align: right;
+  padding: 20px 40px;
+}
+#story{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+section ul {
+  list-style: disc;
+  padding-left: 20px;
 }
