@@ -1,0 +1,54 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-size: 3rem;
+}
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 5px solid black;
+}
+/* task: change background color for div after 650px device size and add border radius */
+@media screen and (min-width: 650px){
+    /* styles applied to min width of 650px and over */
+    body{
+        background-color: gold;
+    }
+    h1{
+        color: brown;
+    }
+    .one{
+        background-color: blueviolet;
+        border-radius: 1rem;
+    }
+}
+/* change font size to 4rem between 700px and 800px */
+@media screen and (min-width: 700px) and (max-width: 800px){
+    h1{
+        font-size: 4rem;
+        color: blueviolet;
+    }
+    .one{
+        display: none;
+    }
+}
+
+/* after size 900px make div disappear */
+@media screen and (min-width: 900px){
+    body{
+        background-color: rgb(13, 255, 0);
+    }    
+ 
+}
+@media print{
+    img{
+        display: none;
+    }
+}
+@media print{
+    a::after{
+      content: " <" attr(href) ">";
+    }
+  }
