@@ -1,10 +1,3 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -44,29 +37,28 @@ header {
 nav {
   background-color: #222;
   padding: 10px 0;
+  width: 100%;
 }
 
 nav ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 5px 0;
+  text-align: center;
+  justify-content: center;
+  width: auto;
+  padding-bottom: 10px;
 }
 
 nav ul li a {
   color: #c78c06;
   font-size: 0.9rem;
+  display: block;
 }
 nav ul li a:hover {
   color: #222;
   background-color: #c78c06;
-  font-size: 0.9rem;
-  margin: 5px 0;
-  border-width: 100%;
-  max-width: 100%;
+  padding: 4px;
+  width: 100%;
 }
 
 nav form {
@@ -109,7 +101,9 @@ h1,
 h2,
 h3,
 h4 {
+  font-weight: 700;
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 p {
@@ -136,8 +130,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers without distortion */
-  z-index: -2; /* Places image behind everything */
+  object-fit: cover;
+  z-index: -2;
 }
 
 /* Transparent black overlay */
@@ -147,8 +141,8 @@ p {
   left: 0;
   width: 100%;
   height: 93%;
-  background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
-  z-index: -1; /* Behind text but over image */
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 /* Styling for heading, paragraph, and button */
@@ -177,8 +171,19 @@ p {
 /* Yellow button styling */
 .banner a {
   display: inline-block;
-  background-color: #e09e00; /* Bright yellow */
-  color: #000; /* Black text */
+  background-color: #e09e00;
+  color: #000;
+  padding: 15px 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  max-width: 200px;
+  margin-right: auto;
+}
+.banner a:hover {
+  display: inline-block;
+  color: #7f693f;
   padding: 15px 15px;
   font-weight: bold;
   border-radius: 4px;
@@ -235,10 +240,20 @@ p {
   display: inline-block;
   background-color: #222;
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 25px 30px;
   border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0px 0px 10px 10px;
+}
+.service a:hover {
+  display: inline-block;
+  background-color: #e09e00;
+  color: #222;
+  padding: 25px 30px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
   margin: 0px 0px 10px 10px;
 }
 
@@ -256,7 +271,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers without distortion */
+  object-fit: cover;
   z-index: -2;
 }
 
@@ -280,6 +295,17 @@ p {
   bottom: 30px;
   background-color: rgba(34, 34, 34, 0.6);
   color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: fit-content;
+  border: 1px solid #c78c06;
+}
+.vision a:hover {
+  bottom: 30px;
+  background-color: #00000099;
+  color: #c78c06;
   padding: 8px 15px;
   border-radius: 4px;
   font-weight: bold;
@@ -356,7 +382,15 @@ p {
   cursor: pointer;
   font-size: 0.9rem;
 }
-
+#contact button:hover {
+  background-color: #c78c06;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
 /* Hours of Operation */
 .hours {
   margin-bottom: 30px;
@@ -424,7 +458,7 @@ footer p {
 }
 
 /* Media Queries for larger screens */
-@media (min-width: 760px) {
+@media screen and (min-width: 760px) {
   /* Header */
   header {
     display: flex;
@@ -437,16 +471,20 @@ footer p {
     background-color: transparent;
     padding: 10px 0;
   }
-
   nav {
     background-color: transparent;
     display: flex;
-    align-items: right;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   nav ul {
+    display: flex;
     flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     margin-right: 20px;
   }
 
@@ -454,10 +492,22 @@ footer p {
     margin: 0 10px;
   }
 
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    color: #222;
+    background-color: #c78c06;
+    padding: 10px;
+  }
+
   nav form {
     display: flex;
     align-items: center;
-    max-width: 100%;
   }
 
   nav form label {
@@ -465,18 +515,19 @@ footer p {
   }
 
   nav form input {
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 4px 0 0 4px;
     border: none;
+    width: 250px;
   }
 
   nav form button {
     background-color: #222;
     border: 1px solid #c78c06;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-    max-width: 900px;
+    color: #c78c06;
   }
 
   /* Two-column layouts */
@@ -487,8 +538,8 @@ footer p {
     right: 20px;
     width: 97%;
     height: 93%;
-    background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
-    z-index: -1; /* Behind text but over image */
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
     padding-right: 80px;
     padding-left: 80px;
   }
@@ -507,6 +558,8 @@ footer p {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    width: 75%;
+    margin: auto;
   }
   .digital {
     grid-column: 1/4;
@@ -528,22 +581,35 @@ footer p {
     grid-column: 1 / -1;
   }
 
+  .team-section{
+    max-width: 80%;
+    margin: auto;
+  }
   .team-member {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
+  .team-member:nth-child(2) img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .team-member:nth-child(2) .team-info {
+    grid-column: 1;
+    grid-row: 1;
+  }
   .team-member img {
-    width: 40%;
-    margin-right: 20px;
-    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
-
+  
   #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1100px;
+    gap: 50px;
+    width: 80%;
     margin: auto;
   }
   .contact {
@@ -557,13 +623,12 @@ footer p {
   .hours {
     grid-column: 1/3;
   }
-  
+
   #contact h2 {
     grid-column: 1 / -1;
   }
 }
-
-@media (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   /* Header */
   header {
     display: flex;
@@ -576,16 +641,20 @@ footer p {
     background-color: transparent;
     padding: 10px 0;
   }
-
   nav {
     background-color: transparent;
     display: flex;
-    align-items: right;
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   nav ul {
+    display: flex;
     flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     margin-right: 20px;
   }
 
@@ -593,10 +662,22 @@ footer p {
     margin: 0 10px;
   }
 
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  nav ul li a:hover {
+    color: #222;
+    background-color: #c78c06;
+    padding: 10px;
+  }
+
   nav form {
     display: flex;
     align-items: center;
-    max-width: 100%;
   }
 
   nav form label {
@@ -604,41 +685,37 @@ footer p {
   }
 
   nav form input {
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 4px 0 0 4px;
     border: none;
+    width: 250px;
   }
 
   nav form button {
     background-color: #222;
     border: 1px solid #c78c06;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-    max-width: 900px;
+    color: #c78c06;
   }
-  .banner {
-    padding-right: 80px;
-    padding-left: 80px;
-  }
+
+  /* Two-column layouts */
   .banner .overlay {
     position: absolute;
-    top: 10;
-    left: 20px;
-    right: 20px;
-    width: 97%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black */
-    z-index: -1; /* Behind text but over image */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
     padding-right: 80px;
     padding-left: 80px;
   }
-  /* Two-column layouts */
   #about {
     flex-direction: row;
     align-items: center;
-    padding-right: 80px;
-    padding-left: 80px;
   }
 
   #about img {
@@ -651,7 +728,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    max-width: 1000px;
+    width: 75%;
     margin: auto;
   }
   .digital {
@@ -674,22 +751,35 @@ footer p {
     grid-column: 1 / -1;
   }
 
-  #team {
+  .team-section{
+    max-width: 80%;
+    margin: auto;
+  }
+  .team-member {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .team-member img {
-    width: 40%;
-    margin-right: 20px;
-    margin-bottom: 0;
+  .team-member:nth-child(2) img {
+    grid-column: 2;
+    grid-row: 1;
   }
-
+  
+  .team-member:nth-child(2) .team-info {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .team-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
   #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1100px;
+    gap: 50px;
+    width: 80%;
     margin: auto;
   }
   .contact {
@@ -703,7 +793,7 @@ footer p {
   .hours {
     grid-column: 1/3;
   }
-  
+
   #contact h2 {
     grid-column: 1 / -1;
   }
